@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B0536311F564DF000B1EBED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536301F564DF000B1EBED /* AppDelegate.swift */; };
+		7B0536331F564DF000B1EBED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536321F564DF000B1EBED /* ViewController.swift */; };
+		7B0536361F564DF100B1EBED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0536341F564DF000B1EBED /* Main.storyboard */; };
+		7B0536381F564DF100B1EBED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B0536371F564DF100B1EBED /* Assets.xcassets */; };
+		7B05363B1F564DF100B1EBED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0536391F564DF100B1EBED /* LaunchScreen.storyboard */; };
+		7B0536461F564DF100B1EBED /* anywaychatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536451F564DF100B1EBED /* anywaychatTests.swift */; };
+		7B0536511F564DF100B1EBED /* anywaychatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536501F564DF100B1EBED /* anywaychatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B0536421F564DF100B1EBED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B0536251F564DF000B1EBED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B05362C1F564DF000B1EBED;
+			remoteInfo = anywaychat;
+		};
+		7B05364D1F564DF100B1EBED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B0536251F564DF000B1EBED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B05362C1F564DF000B1EBED;
+			remoteInfo = anywaychat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B05362D1F564DF000B1EBED /* anywaychat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anywaychat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B0536301F564DF000B1EBED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B0536321F564DF000B1EBED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B0536351F564DF000B1EBED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B0536371F564DF100B1EBED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B05363A1F564DF100B1EBED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B05363C1F564DF100B1EBED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B0536411F564DF100B1EBED /* anywaychatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = anywaychatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B0536451F564DF100B1EBED /* anywaychatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anywaychatTests.swift; sourceTree = "<group>"; };
+		7B0536471F564DF100B1EBED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B05364C1F564DF100B1EBED /* anywaychatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = anywaychatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B0536501F564DF100B1EBED /* anywaychatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anywaychatUITests.swift; sourceTree = "<group>"; };
+		7B0536521F564DF100B1EBED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B05362A1F564DF000B1EBED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B05363E1F564DF100B1EBED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B0536491F564DF100B1EBED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B0536241F564DF000B1EBED = {
+			isa = PBXGroup;
+			children = (
+				7B05362F1F564DF000B1EBED /* anywaychat */,
+				7B0536441F564DF100B1EBED /* anywaychatTests */,
+				7B05364F1F564DF100B1EBED /* anywaychatUITests */,
+				7B05362E1F564DF000B1EBED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B05362E1F564DF000B1EBED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B05362D1F564DF000B1EBED /* anywaychat.app */,
+				7B0536411F564DF100B1EBED /* anywaychatTests.xctest */,
+				7B05364C1F564DF100B1EBED /* anywaychatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B05362F1F564DF000B1EBED /* anywaychat */ = {
+			isa = PBXGroup;
+			children = (
+				7B0536301F564DF000B1EBED /* AppDelegate.swift */,
+				7B0536321F564DF000B1EBED /* ViewController.swift */,
+				7B0536341F564DF000B1EBED /* Main.storyboard */,
+				7B0536371F564DF100B1EBED /* Assets.xcassets */,
+				7B0536391F564DF100B1EBED /* LaunchScreen.storyboard */,
+				7B05363C1F564DF100B1EBED /* Info.plist */,
+			);
+			path = anywaychat;
+			sourceTree = "<group>";
+		};
+		7B0536441F564DF100B1EBED /* anywaychatTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B0536451F564DF100B1EBED /* anywaychatTests.swift */,
+				7B0536471F564DF100B1EBED /* Info.plist */,
+			);
+			path = anywaychatTests;
+			sourceTree = "<group>";
+		};
+		7B05364F1F564DF100B1EBED /* anywaychatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B0536501F564DF100B1EBED /* anywaychatUITests.swift */,
+				7B0536521F564DF100B1EBED /* Info.plist */,
+			);
+			path = anywaychatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B05362C1F564DF000B1EBED /* anywaychat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B0536551F564DF100B1EBED /* Build configuration list for PBXNativeTarget "anywaychat" */;
+			buildPhases = (
+				7B0536291F564DF000B1EBED /* Sources */,
+				7B05362A1F564DF000B1EBED /* Frameworks */,
+				7B05362B1F564DF000B1EBED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = anywaychat;
+			productName = anywaychat;
+			productReference = 7B05362D1F564DF000B1EBED /* anywaychat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B0536401F564DF100B1EBED /* anywaychatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B0536581F564DF100B1EBED /* Build configuration list for PBXNativeTarget "anywaychatTests" */;
+			buildPhases = (
+				7B05363D1F564DF100B1EBED /* Sources */,
+				7B05363E1F564DF100B1EBED /* Frameworks */,
+				7B05363F1F564DF100B1EBED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B0536431F564DF100B1EBED /* PBXTargetDependency */,
+			);
+			name = anywaychatTests;
+			productName = anywaychatTests;
+			productReference = 7B0536411F564DF100B1EBED /* anywaychatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B05364B1F564DF100B1EBED /* anywaychatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B05365B1F564DF100B1EBED /* Build configuration list for PBXNativeTarget "anywaychatUITests" */;
+			buildPhases = (
+				7B0536481F564DF100B1EBED /* Sources */,
+				7B0536491F564DF100B1EBED /* Frameworks */,
+				7B05364A1F564DF100B1EBED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B05364E1F564DF100B1EBED /* PBXTargetDependency */,
+			);
+			name = anywaychatUITests;
+			productName = anywaychatUITests;
+			productReference = 7B05364C1F564DF100B1EBED /* anywaychatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B0536251F564DF000B1EBED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = nakadoribooks;
+				TargetAttributes = {
+					7B05362C1F564DF000B1EBED = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5GBK6MAQQE;
+						ProvisioningStyle = Automatic;
+					};
+					7B0536401F564DF100B1EBED = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5GBK6MAQQE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7B05362C1F564DF000B1EBED;
+					};
+					7B05364B1F564DF100B1EBED = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5GBK6MAQQE;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7B05362C1F564DF000B1EBED;
+					};
+				};
+			};
+			buildConfigurationList = 7B0536281F564DF000B1EBED /* Build configuration list for PBXProject "anywaychat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B0536241F564DF000B1EBED;
+			productRefGroup = 7B05362E1F564DF000B1EBED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B05362C1F564DF000B1EBED /* anywaychat */,
+				7B0536401F564DF100B1EBED /* anywaychatTests */,
+				7B05364B1F564DF100B1EBED /* anywaychatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B05362B1F564DF000B1EBED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B05363B1F564DF100B1EBED /* LaunchScreen.storyboard in Resources */,
+				7B0536381F564DF100B1EBED /* Assets.xcassets in Resources */,
+				7B0536361F564DF100B1EBED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B05363F1F564DF100B1EBED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B05364A1F564DF100B1EBED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B0536291F564DF000B1EBED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0536331F564DF000B1EBED /* ViewController.swift in Sources */,
+				7B0536311F564DF000B1EBED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B05363D1F564DF100B1EBED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0536461F564DF100B1EBED /* anywaychatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B0536481F564DF100B1EBED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B0536511F564DF100B1EBED /* anywaychatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B0536431F564DF100B1EBED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B05362C1F564DF000B1EBED /* anywaychat */;
+			targetProxy = 7B0536421F564DF100B1EBED /* PBXContainerItemProxy */;
+		};
+		7B05364E1F564DF100B1EBED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B05362C1F564DF000B1EBED /* anywaychat */;
+			targetProxy = 7B05364D1F564DF100B1EBED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B0536341F564DF000B1EBED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B0536351F564DF000B1EBED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B0536391F564DF100B1EBED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B05363A1F564DF100B1EBED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B0536531F564DF100B1EBED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B0536541F564DF100B1EBED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B0536561F564DF100B1EBED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5GBK6MAQQE;
+				INFOPLIST_FILE = anywaychat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakadoribooks.anywaychat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7B0536571F564DF100B1EBED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5GBK6MAQQE;
+				INFOPLIST_FILE = anywaychat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakadoribooks.anywaychat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7B0536591F564DF100B1EBED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5GBK6MAQQE;
+				INFOPLIST_FILE = anywaychatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakadoribooks.anywaychatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/anywaychat.app/anywaychat";
+			};
+			name = Debug;
+		};
+		7B05365A1F564DF100B1EBED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5GBK6MAQQE;
+				INFOPLIST_FILE = anywaychatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakadoribooks.anywaychatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/anywaychat.app/anywaychat";
+			};
+			name = Release;
+		};
+		7B05365C1F564DF100B1EBED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5GBK6MAQQE;
+				INFOPLIST_FILE = anywaychatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakadoribooks.anywaychatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = anywaychat;
+			};
+			name = Debug;
+		};
+		7B05365D1F564DF100B1EBED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5GBK6MAQQE;
+				INFOPLIST_FILE = anywaychatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakadoribooks.anywaychatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = anywaychat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B0536281F564DF000B1EBED /* Build configuration list for PBXProject "anywaychat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0536531F564DF100B1EBED /* Debug */,
+				7B0536541F564DF100B1EBED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B0536551F564DF100B1EBED /* Build configuration list for PBXNativeTarget "anywaychat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0536561F564DF100B1EBED /* Debug */,
+				7B0536571F564DF100B1EBED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7B0536581F564DF100B1EBED /* Build configuration list for PBXNativeTarget "anywaychatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B0536591F564DF100B1EBED /* Debug */,
+				7B05365A1F564DF100B1EBED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7B05365B1F564DF100B1EBED /* Build configuration list for PBXNativeTarget "anywaychatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B05365C1F564DF100B1EBED /* Debug */,
+				7B05365D1F564DF100B1EBED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B0536251F564DF000B1EBED /* Project object */;
+}
