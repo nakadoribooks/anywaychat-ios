@@ -124,7 +124,7 @@ class ViewController: UIViewController, InputFormDelegate
                     return;
                 }
                 
-                AloeThread.wait(0.2, proc: {
+                AloeThread.wait(0.4, proc: {
                     self.scrollToBottom()
                 })
             })
@@ -229,6 +229,7 @@ class ViewController: UIViewController, InputFormDelegate
     }
     
     private func scrollToBottom(){
+        
         let toY = tableView.contentSize.height - tableView.frame.size.height
         
         if toY < 0{
