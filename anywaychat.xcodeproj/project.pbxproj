@@ -9,11 +9,31 @@
 /* Begin PBXBuildFile section */
 		7B0536311F564DF000B1EBED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536301F564DF000B1EBED /* AppDelegate.swift */; };
 		7B0536331F564DF000B1EBED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536321F564DF000B1EBED /* ViewController.swift */; };
-		7B0536361F564DF100B1EBED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0536341F564DF000B1EBED /* Main.storyboard */; };
 		7B0536381F564DF100B1EBED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B0536371F564DF100B1EBED /* Assets.xcassets */; };
 		7B05363B1F564DF100B1EBED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B0536391F564DF100B1EBED /* LaunchScreen.storyboard */; };
 		7B0536461F564DF100B1EBED /* anywaychatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536451F564DF100B1EBED /* anywaychatTests.swift */; };
 		7B0536511F564DF100B1EBED /* anywaychatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536501F564DF100B1EBED /* anywaychatUITests.swift */; };
+		7B05366E1F564ED700B1EBED /* AloeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536601F564ED700B1EBED /* AloeColor.swift */; };
+		7B05366F1F564ED700B1EBED /* AloeDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536611F564ED700B1EBED /* AloeDate.swift */; };
+		7B0536701F564ED700B1EBED /* AloeDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536621F564ED700B1EBED /* AloeDevice.swift */; };
+		7B0536711F564ED700B1EBED /* AloeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536631F564ED700B1EBED /* AloeEvent.swift */; };
+		7B0536721F564ED700B1EBED /* AloeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536641F564ED700B1EBED /* AloeFile.swift */; };
+		7B0536731F564ED700B1EBED /* AloeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536651F564ED700B1EBED /* AloeLocation.swift */; };
+		7B0536741F564ED700B1EBED /* AloeThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536661F564ED700B1EBED /* AloeThread.swift */; };
+		7B0536751F564ED700B1EBED /* AloeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536671F564ED700B1EBED /* AloeUI.swift */; };
+		7B0536761F564ED700B1EBED /* AloeChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536691F564ED700B1EBED /* AloeChain.swift */; };
+		7B0536771F564ED700B1EBED /* AloeEase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B05366A1F564ED700B1EBED /* AloeEase.swift */; };
+		7B0536781F564ED700B1EBED /* AloeEaseBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B05366B1F564ED700B1EBED /* AloeEaseBezier.swift */; };
+		7B0536791F564ED700B1EBED /* AloeTween.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B05366C1F564ED700B1EBED /* AloeTween.swift */; };
+		7B05367A1F564ED700B1EBED /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B05366D1F564ED700B1EBED /* ReplaceMe.swift */; };
+		7B05367D1F564F2000B1EBED /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B05367C1F564F2000B1EBED /* UI.swift */; };
+		7B0536801F5659B600B1EBED /* InputForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B05367F1F5659B600B1EBED /* InputForm.swift */; };
+		7B0536821F56736D00B1EBED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B0536811F56736D00B1EBED /* GoogleService-Info.plist */; };
+		7B0536841F56746100B1EBED /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536831F56746100B1EBED /* Message.swift */; };
+		7B0536881F56A35500B1EBED /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536871F56A35500B1EBED /* MessageCell.swift */; };
+		7B05368A1F56B0DC00B1EBED /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536891F56B0DC00B1EBED /* Global.swift */; };
+		7B05368C1F56C93500B1EBED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B05368B1F56C93500B1EBED /* Main.storyboard */; };
+		A86EB42B3F9D0B7767DAB3BB /* Pods_anywaychat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351981B2013F4106F1A6B9C6 /* Pods_anywaychat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21BD8A39458575F39EAB9A2A /* Pods-anywaychat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anywaychat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-anywaychat/Pods-anywaychat.debug.xcconfig"; sourceTree = "<group>"; };
+		351981B2013F4106F1A6B9C6 /* Pods_anywaychat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_anywaychat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F3673279CA15DC325C7969 /* Pods-anywaychat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anywaychat.release.xcconfig"; path = "Pods/Target Support Files/Pods-anywaychat/Pods-anywaychat.release.xcconfig"; sourceTree = "<group>"; };
 		7B05362D1F564DF000B1EBED /* anywaychat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anywaychat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0536301F564DF000B1EBED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B0536321F564DF000B1EBED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7B0536351F564DF000B1EBED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B0536371F564DF100B1EBED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B05363A1F564DF100B1EBED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B05363C1F564DF100B1EBED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +69,26 @@
 		7B05364C1F564DF100B1EBED /* anywaychatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = anywaychatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B0536501F564DF100B1EBED /* anywaychatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anywaychatUITests.swift; sourceTree = "<group>"; };
 		7B0536521F564DF100B1EBED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B0536601F564ED700B1EBED /* AloeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeColor.swift; sourceTree = "<group>"; };
+		7B0536611F564ED700B1EBED /* AloeDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeDate.swift; sourceTree = "<group>"; };
+		7B0536621F564ED700B1EBED /* AloeDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeDevice.swift; sourceTree = "<group>"; };
+		7B0536631F564ED700B1EBED /* AloeEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeEvent.swift; sourceTree = "<group>"; };
+		7B0536641F564ED700B1EBED /* AloeFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeFile.swift; sourceTree = "<group>"; };
+		7B0536651F564ED700B1EBED /* AloeLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeLocation.swift; sourceTree = "<group>"; };
+		7B0536661F564ED700B1EBED /* AloeThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeThread.swift; sourceTree = "<group>"; };
+		7B0536671F564ED700B1EBED /* AloeUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeUI.swift; sourceTree = "<group>"; };
+		7B0536691F564ED700B1EBED /* AloeChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeChain.swift; sourceTree = "<group>"; };
+		7B05366A1F564ED700B1EBED /* AloeEase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeEase.swift; sourceTree = "<group>"; };
+		7B05366B1F564ED700B1EBED /* AloeEaseBezier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeEaseBezier.swift; sourceTree = "<group>"; };
+		7B05366C1F564ED700B1EBED /* AloeTween.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AloeTween.swift; sourceTree = "<group>"; };
+		7B05366D1F564ED700B1EBED /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		7B05367C1F564F2000B1EBED /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		7B05367F1F5659B600B1EBED /* InputForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputForm.swift; sourceTree = "<group>"; };
+		7B0536811F56736D00B1EBED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B0536831F56746100B1EBED /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7B0536871F56A35500B1EBED /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		7B0536891F56B0DC00B1EBED /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		7B05368B1F56C93500B1EBED /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86EB42B3F9D0B7767DAB3BB /* Pods_anywaychat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +117,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14D11A7FE343DFD154949C6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21BD8A39458575F39EAB9A2A /* Pods-anywaychat.debug.xcconfig */,
+				55F3673279CA15DC325C7969 /* Pods-anywaychat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79E1C4776FBB49FE266BDF46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				351981B2013F4106F1A6B9C6 /* Pods_anywaychat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B0536241F564DF000B1EBED = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +141,8 @@
 				7B0536441F564DF100B1EBED /* anywaychatTests */,
 				7B05364F1F564DF100B1EBED /* anywaychatUITests */,
 				7B05362E1F564DF000B1EBED /* Products */,
+				14D11A7FE343DFD154949C6E /* Pods */,
+				79E1C4776FBB49FE266BDF46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +159,17 @@
 		7B05362F1F564DF000B1EBED /* anywaychat */ = {
 			isa = PBXGroup;
 			children = (
+				7B05367E1F56585700B1EBED /* parts */,
+				7B05367B1F564EFA00B1EBED /* util */,
+				7B05365E1F564ED700B1EBED /* libs */,
 				7B0536301F564DF000B1EBED /* AppDelegate.swift */,
 				7B0536321F564DF000B1EBED /* ViewController.swift */,
-				7B0536341F564DF000B1EBED /* Main.storyboard */,
+				7B0536831F56746100B1EBED /* Message.swift */,
 				7B0536371F564DF100B1EBED /* Assets.xcassets */,
+				7B05368B1F56C93500B1EBED /* Main.storyboard */,
 				7B0536391F564DF100B1EBED /* LaunchScreen.storyboard */,
 				7B05363C1F564DF100B1EBED /* Info.plist */,
+				7B0536811F56736D00B1EBED /* GoogleService-Info.plist */,
 			);
 			path = anywaychat;
 			sourceTree = "<group>";
@@ -125,6 +192,60 @@
 			path = anywaychatUITests;
 			sourceTree = "<group>";
 		};
+		7B05365E1F564ED700B1EBED /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				7B05365F1F564ED700B1EBED /* aloe */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		7B05365F1F564ED700B1EBED /* aloe */ = {
+			isa = PBXGroup;
+			children = (
+				7B0536601F564ED700B1EBED /* AloeColor.swift */,
+				7B0536611F564ED700B1EBED /* AloeDate.swift */,
+				7B0536621F564ED700B1EBED /* AloeDevice.swift */,
+				7B0536631F564ED700B1EBED /* AloeEvent.swift */,
+				7B0536641F564ED700B1EBED /* AloeFile.swift */,
+				7B0536651F564ED700B1EBED /* AloeLocation.swift */,
+				7B0536661F564ED700B1EBED /* AloeThread.swift */,
+				7B0536671F564ED700B1EBED /* AloeUI.swift */,
+				7B0536681F564ED700B1EBED /* animation */,
+				7B05366D1F564ED700B1EBED /* ReplaceMe.swift */,
+			);
+			path = aloe;
+			sourceTree = "<group>";
+		};
+		7B0536681F564ED700B1EBED /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				7B0536691F564ED700B1EBED /* AloeChain.swift */,
+				7B05366A1F564ED700B1EBED /* AloeEase.swift */,
+				7B05366B1F564ED700B1EBED /* AloeEaseBezier.swift */,
+				7B05366C1F564ED700B1EBED /* AloeTween.swift */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
+		7B05367B1F564EFA00B1EBED /* util */ = {
+			isa = PBXGroup;
+			children = (
+				7B05367C1F564F2000B1EBED /* UI.swift */,
+				7B0536891F56B0DC00B1EBED /* Global.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		7B05367E1F56585700B1EBED /* parts */ = {
+			isa = PBXGroup;
+			children = (
+				7B05367F1F5659B600B1EBED /* InputForm.swift */,
+				7B0536871F56A35500B1EBED /* MessageCell.swift */,
+			);
+			path = parts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B0536551F564DF100B1EBED /* Build configuration list for PBXNativeTarget "anywaychat" */;
 			buildPhases = (
+				BC56F3CF095F9DF21B9D0E44 /* [CP] Check Pods Manifest.lock */,
 				7B0536291F564DF000B1EBED /* Sources */,
 				7B05362A1F564DF000B1EBED /* Frameworks */,
 				7B05362B1F564DF000B1EBED /* Resources */,
+				584F4B3A5FE77B5C0D4AB330 /* [CP] Embed Pods Frameworks */,
+				7E06ADA3D45AE3003E9C70CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,8 +317,8 @@
 				TargetAttributes = {
 					7B05362C1F564DF000B1EBED = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 5GBK6MAQQE;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = RHQWK52K6D;
+						ProvisioningStyle = Manual;
 					};
 					7B0536401F564DF100B1EBED = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -236,8 +360,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B05363B1F564DF100B1EBED /* LaunchScreen.storyboard in Resources */,
+				7B0536821F56736D00B1EBED /* GoogleService-Info.plist in Resources */,
 				7B0536381F564DF100B1EBED /* Assets.xcassets in Resources */,
-				7B0536361F564DF100B1EBED /* Main.storyboard in Resources */,
+				7B05368C1F56C93500B1EBED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +382,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		584F4B3A5FE77B5C0D4AB330 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-anywaychat/Pods-anywaychat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E06ADA3D45AE3003E9C70CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-anywaychat/Pods-anywaychat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC56F3CF095F9DF21B9D0E44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B0536291F564DF000B1EBED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B0536771F564ED700B1EBED /* AloeEase.swift in Sources */,
+				7B0536881F56A35500B1EBED /* MessageCell.swift in Sources */,
+				7B05367D1F564F2000B1EBED /* UI.swift in Sources */,
+				7B05366F1F564ED700B1EBED /* AloeDate.swift in Sources */,
+				7B0536841F56746100B1EBED /* Message.swift in Sources */,
+				7B0536801F5659B600B1EBED /* InputForm.swift in Sources */,
+				7B0536791F564ED700B1EBED /* AloeTween.swift in Sources */,
+				7B05366E1F564ED700B1EBED /* AloeColor.swift in Sources */,
+				7B0536751F564ED700B1EBED /* AloeUI.swift in Sources */,
+				7B0536721F564ED700B1EBED /* AloeFile.swift in Sources */,
+				7B0536701F564ED700B1EBED /* AloeDevice.swift in Sources */,
+				7B0536741F564ED700B1EBED /* AloeThread.swift in Sources */,
+				7B0536781F564ED700B1EBED /* AloeEaseBezier.swift in Sources */,
+				7B05367A1F564ED700B1EBED /* ReplaceMe.swift in Sources */,
 				7B0536331F564DF000B1EBED /* ViewController.swift in Sources */,
+				7B0536761F564ED700B1EBED /* AloeChain.swift in Sources */,
 				7B0536311F564DF000B1EBED /* AppDelegate.swift in Sources */,
+				7B0536711F564ED700B1EBED /* AloeEvent.swift in Sources */,
+				7B0536731F564ED700B1EBED /* AloeLocation.swift in Sources */,
+				7B05368A1F56B0DC00B1EBED /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +490,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7B0536341F564DF000B1EBED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B0536351F564DF000B1EBED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7B0536391F564DF100B1EBED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,26 +596,36 @@
 		};
 		7B0536561F564DF100B1EBED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21BD8A39458575F39EAB9A2A /* Pods-anywaychat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5GBK6MAQQE;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yu kawase (UP6FD9KBW6)";
+				DEVELOPMENT_TEAM = RHQWK52K6D;
 				INFOPLIST_FILE = anywaychat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nakadoribooks.anywaychat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2b17726b-7660-44c0-97bf-7fe9420d89c7";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard_2017;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		7B0536571F564DF100B1EBED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F3673279CA15DC325C7969 /* Pods-anywaychat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5GBK6MAQQE;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yu kawase (UP6FD9KBW6)";
+				DEVELOPMENT_TEAM = RHQWK52K6D;
 				INFOPLIST_FILE = anywaychat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nakadoribooks.anywaychat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2b17726b-7660-44c0-97bf-7fe9420d89c7";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard_2017;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -514,6 +707,7 @@
 				7B0536571F564DF100B1EBED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B0536581F564DF100B1EBED /* Build configuration list for PBXNativeTarget "anywaychatTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +716,7 @@
 				7B05365A1F564DF100B1EBED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B05365B1F564DF100B1EBED /* Build configuration list for PBXNativeTarget "anywaychatUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +725,7 @@
 				7B05365D1F564DF100B1EBED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
