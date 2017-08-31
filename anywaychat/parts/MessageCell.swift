@@ -113,7 +113,7 @@ class MessageCell: UITableViewCell {
         nameLabel.frame.origin.x = UI.margin
         
         dateLabel.frame.origin = CGPoint(x: UI.margin, y: contentSize.height + UI.margin + UI.marginTite)
-        dateLabel.text = Global.agoText(message.createdAt)
+        dateLabel.text = Global.agoText(message.createdAt) + " (\(message.platform.name()))"
         
         wrapView.frame = CGRect(x: UI.margin, y: UI.margin, width: contentSize.width, height: contentSize.height)
         

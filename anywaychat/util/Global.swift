@@ -22,6 +22,17 @@ enum PlatformType{
         }
     }
     
+    func name()->String{
+        switch self {
+        case .browser:
+            return "Browser"
+        case .ios:
+            return "iOS"
+        case .android:
+            return "Android"
+        }
+    }
+    
     static func withVal(val:String)->PlatformType{
         switch val {
         case PlatformType.browser.val():
@@ -52,7 +63,10 @@ class Global: NSObject {
 
     static let userId = String.getRandomStringWithLength(length: 8)
     static var timestampOffset:TimeInterval = 0
-    static var currentChatId:String = "abcdef"
+    static var currentChatId:String? = nil
+    
+    private static let randomNameList = ["太宰治","三島由紀夫","カフカ","田中角栄", "大塩平八郎", "土方巽", "アルベルト・アインシュタイン", "バラモス", "メタルスライム"]
+    static let currentName = randomNameList[Int(arc4random_uniform(UInt32(randomNameList.count)))]
     
     static func agoText(_ date:Date)->String{
         

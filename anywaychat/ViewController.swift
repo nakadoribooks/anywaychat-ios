@@ -18,7 +18,8 @@ class ViewController: UIViewController, InputFormDelegate
     private let baseTableHeight:CGFloat = windowHeight() - 64 - InputForm.Height
     private var messageList:[Message] = []
     private var chatRef:DatabaseReference!
-    private var userName:String = "iOS"
+    private var userName:String = Global.currentName
+    private let qrOverlay = UIView(frame: windowFrame())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +31,14 @@ class ViewController: UIViewController, InputFormDelegate
     }
     
     private func setup(){
+        setupRef()
         setupTableView()
         setupHeader()
         
         inputForm.delegate = self
         view.addSubview(inputForm.view)
+        
+        qrOverlay.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.hideQr)))
         
         let offsetRef = Database.database().reference(withPath: ".info/serverTimeOffset")
         offsetRef.observe(.value, with: { snapshot in
@@ -42,15 +46,23 @@ class ViewController: UIViewController, InputFormDelegate
                 Global.timestampOffset = offset
             }
             
-            self.setupRef()
+            self.loadMessageList()
         })
     }
     
     private func setupRef(){
         let ref = Database.database().reference()
-        let chatId = Global.currentChatId
-        self.chatRef = ref.child("chats").child(chatId)
+        if let chatId = Global.currentChatId{
+            self.chatRef = ref.child("chats").child(chatId)
+        }else{
+            self.chatRef = ref.child("chats").childByAutoId()
+            Global.currentChatId = self.chatRef.key
+        }
+    }
+    
+    private func loadMessageList(){
         
+        // 最初の読み込み
         self.chatRef.child("messageList").observeSingleEvent(of: .value, with: { (snapshot) in
             
             var results:[Message] = []
@@ -81,7 +93,6 @@ class ViewController: UIViewController, InputFormDelegate
                         self.messageList = results
                         self.onLoadMessageList()
                     }
-                    
                 })
             }
             
@@ -89,12 +100,11 @@ class ViewController: UIViewController, InputFormDelegate
     }
     
     private func onLoadMessageList(){
-        print("onLoadMessageList")
         tableView.reloadData()
         
         scrollToBottom()
         
-        // subscribe
+        // 監視
         self.chatRef.child("messageList").observe(.childAdded, with: { (snapshot) in
             let newMessageKey = snapshot.key
             
@@ -160,12 +170,62 @@ class ViewController: UIViewController, InputFormDelegate
         chatIdLabel.textAlignment = .center
         chatIdLabel.text = Global.currentChatId
         headerView.addSubview(chatIdLabel)
+        
+        let qrButton = UIButton(frame: CGRect(x: windowWidth()-44-UI.marginTite, y: 20, width: 44, height: 44))
+        headerView.addSubview(qrButton)
+        let qrImageView = UIImageView(image: UIImage(named:"qr"))
+        qrImageView.frame = CGRect(x: UI.marginTite, y: UI.marginTite, width: 44 - (UI.marginTite * 2.0), height: 44 - (UI.marginTite * 2.0))
+        qrButton.addSubview(qrImageView)
+        
+        qrButton.addTarget(self, action: #selector(ViewController.tapQr), for: .touchUpInside)
+    }
+    
+    private dynamic func tapQr(){
+        inputForm.blur()
+        
+        let qrUrl = "anywaychat://" + self.chatRef.key
+        let data = qrUrl.data(using: String.Encoding.utf8)!
+        let qr = CIFilter(name: "CIQRCodeGenerator", withInputParameters: ["inputMessage": data, "inputCorrectionLevel": "M"])!
+
+        let sizeTransform = CGAffineTransform(scaleX: 8, y: 8)
+        let qrImage = UIImage(ciImage: qr.outputImage!.applying(sizeTransform))
+        
+        let qrImageView = UIImageView(image: qrImage)
+        qrImageView.frame = CGRect(x: (windowWidth() - qrImage.size.width) / 2.0, y: (windowHeight() - qrImage.size.height) / 2.0, width: qrImage.size.width, height: qrImage.size.height)
+        qrImageView.alpha = 0
+        qrImageView.isUserInteractionEnabled = false
+        
+        let blackLayer = UIView(frame: windowFrame())
+        blackLayer.alpha = 0
+        blackLayer.backgroundColor = UIColor.black
+        
+        qrOverlay.addSubview(blackLayer)
+        qrOverlay.addSubview(qrImageView)
+        qrOverlay.alpha = 1.0
+        view.addSubview(qrOverlay)
+        
+        AloeChain().add(0.2, ease: .Ease) { (val) in
+            blackLayer.alpha = 0.8 * val
+        }.add(0.2, ease: .Ease) { (val) in
+            qrImageView.alpha = val
+        }.execute()
+    }
+    
+    private dynamic func hideQr(){
+        AloeChain().add(0.2, ease: .Ease) { (val) in
+            self.qrOverlay.alpha = 1.0 - val
+        }.call {
+            self.qrOverlay.removeFromSuperview()
+            for subview in self.qrOverlay.subviews{
+                subview.removeFromSuperview()
+            }
+        }.execute()
     }
     
     private func inBottom()->Bool{
         let y = tableView.contentSize.height - tableView.frame.size.height - tableView.contentOffset.y
         
-        return y <= 20.0
+        return y <= 100.0
     }
     
     private func scrollToBottom(){
@@ -233,8 +293,12 @@ class ViewController: UIViewController, InputFormDelegate
         
         var toY = tableView.contentOffset.y
         if inBottom(){
-            toY = toY + keyboardFrame.size.height - keyboardHeight
+            if tableView.contentSize.height > toHeight{
+                toY = toY + keyboardFrame.size.height - keyboardHeight
+            }
         }
+        
+        toY = max(0, min(toY, tableView.contentSize.height - toHeight))
         
         UIView.animate(withDuration: duration, delay: 0.0, options: UIViewAnimationOptions(rawValue: curve), animations: { _ in
             self.tableView.frame.size.height = toHeight

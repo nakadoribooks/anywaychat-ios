@@ -33,6 +33,7 @@
 		7B0536881F56A35500B1EBED /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536871F56A35500B1EBED /* MessageCell.swift */; };
 		7B05368A1F56B0DC00B1EBED /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0536891F56B0DC00B1EBED /* Global.swift */; };
 		7B05368C1F56C93500B1EBED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B05368B1F56C93500B1EBED /* Main.storyboard */; };
+		7B544A381F57A3E000B7E6BA /* qr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B544A371F57A3E000B7E6BA /* qr@2x.png */; };
 		A86EB42B3F9D0B7767DAB3BB /* Pods_anywaychat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351981B2013F4106F1A6B9C6 /* Pods_anywaychat.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		7B0536871F56A35500B1EBED /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		7B0536891F56B0DC00B1EBED /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		7B05368B1F56C93500B1EBED /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7B544A371F57A3E000B7E6BA /* qr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		7B05362F1F564DF000B1EBED /* anywaychat */ = {
 			isa = PBXGroup;
 			children = (
+				7B544A361F57A3E000B7E6BA /* images */,
 				7B05367E1F56585700B1EBED /* parts */,
 				7B05367B1F564EFA00B1EBED /* util */,
 				7B05365E1F564ED700B1EBED /* libs */,
@@ -244,6 +247,14 @@
 				7B0536871F56A35500B1EBED /* MessageCell.swift */,
 			);
 			path = parts;
+			sourceTree = "<group>";
+		};
+		7B544A361F57A3E000B7E6BA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7B544A371F57A3E000B7E6BA /* qr@2x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B544A381F57A3E000B7E6BA /* qr@2x.png in Resources */,
 				7B05363B1F564DF100B1EBED /* LaunchScreen.storyboard in Resources */,
 				7B0536821F56736D00B1EBED /* GoogleService-Info.plist in Resources */,
 				7B0536381F564DF100B1EBED /* Assets.xcassets in Resources */,
